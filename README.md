@@ -1,126 +1,176 @@
-# E-commerce User & Product Behaviour Analytics
+# 🛒 E-commerce User & Product Behaviour Analytics
 
-## Project Overview
+## 📌 Project Overview
 
-This project analyzes customer behaviour and product performance using SQL, Python, and Tableau.
+This project analyzes user behavior and product performance for an e-commerce platform using **SQL, Python, and Tableau**. The objective is to transform raw customer interaction data into meaningful business insights that can help improve customer engagement, optimize product performance, and increase conversion rates.
 
-The objective is to generate actionable business insights by analyzing user journeys, purchase behaviour, conversion funnels, and product performance.
-
----
-
-## Business Problem
-
-E-commerce companies generate millions of customer interactions daily.
-
-This project answers questions such as:
-
-- Which products convert the best?
-- Where do customers abandon purchases?
-- Which categories generate the highest revenue?
-- Which users purchase repeatedly?
-- Which products should be promoted?
+The project follows a complete analytics workflow, including data cleaning, exploratory data analysis (EDA), SQL-based business analysis, and interactive dashboard development.
 
 ---
 
-## Dataset
+# 🎯 Business Problem
 
-Source:
-RetailRocket E-commerce Dataset
+E-commerce businesses generate millions of customer interactions every day, making it challenging to understand purchasing behavior and identify opportunities for growth.
 
-Tables
-  - Events
-  - Item Properties
-  - Category Tree
----
+This project aims to answer key business questions such as:
 
-## Technologies Used
-
-- SQL
-- Python
-- Pandas
-- NumPy
-- Tableau
-- Excel
+* Which products have the highest conversion rates?
+* Where do customers drop off in the purchase journey?
+* Which product categories drive the most sales?
+* How many customers return for repeat purchases?
+* Which products should be promoted based on user engagement?
+* What trends can help improve customer retention and revenue?
 
 ---
 
-## Project Workflow
+# 📊 Dataset
 
-Data Collection
-↓
-Data Cleaning
-↓
-Exploratory Data Analysis
-↓
-SQL Analysis
-↓
-Customer Analytics
-↓
-Product Analytics
-↓
-Business KPIs
-↓
-Dashboard Creation
+The project uses the **RetailRocket E-commerce Dataset**, which contains anonymous customer interactions with an online retail platform.
+
+### Dataset Files
+
+* **events.csv** – Customer events such as views, add-to-cart actions, and transactions.
+* **item_properties.csv** – Product attributes and metadata.
+* **category_tree.csv** – Product category hierarchy.
 
 ---
 
-## SQL Analysis
+# 🛠️ Tech Stack
 
-Performed analysis on:
-
-- Conversion Rate
-- Funnel Analysis
-- Repeat Customers
-- Top Products
-- Product Categories
-- Cart Abandonment
-- Daily Sales
-- Monthly Sales
-- Customer Retention
+* SQL
+* Python
+* Pandas
+* NumPy
+* Tableau
+* Microsoft Excel
 
 ---
 
-## Python Analysis
+# 📈 Project Workflow
 
-Performed
-
-- Data Cleaning
-- Missing Value Treatment
-- Exploratory Data Analysis
-- Customer Segmentation
-- Visualizations
-
----
-
-## Tableau Dashboard
-
-Dashboard includes
-
-- Sales Overview
-- Customer Analytics
-- Product Analytics
-- Conversion Funnel
-- Top Categories
-- Revenue Trend
+1. Data Collection
+2. Data Cleaning & Preprocessing
+3. Exploratory Data Analysis (EDA)
+4. SQL-Based Business Analysis
+5. Customer Behaviour Analysis
+6. Product Performance Analysis
+7. KPI Development
+8. Tableau Dashboard Creation
+9. Business Insights & Recommendations
 
 ---
 
-## Business Insights
+# 🔍 SQL Analysis
 
-- Identified top-performing products.
-- Measured customer conversion rates.
-- Analyzed repeat purchase behaviour.
-- Evaluated cart abandonment trends.
-- Generated KPI dashboards for business reporting.
+The following business analyses were performed:
+
+* Customer Conversion Rate
+* Cart Abandonment Analysis
+* Product Performance Analysis
+* Category-wise Sales
+* Repeat Customer Analysis
+* Daily & Monthly Transaction Trends
+* Customer Purchase Frequency
+* Top Selling Products
+* Revenue Analysis
 
 ---
 
-## Repository Structure
+# 🐍 Python Analysis
 
-(Add folder structure here)
+Python was used for:
+
+* Data Cleaning
+* Missing Value Handling
+* Exploratory Data Analysis
+* Customer Behaviour Analysis
+* Product Trend Analysis
+* Data Visualization
 
 ---
 
-## Author
+# 📊 Tableau Dashboard
 
-Ajay Mundari
+An interactive Tableau dashboard was developed to monitor business performance through key metrics and visualizations, including:
+
+* Sales Overview
+* Customer Behaviour Dashboard
+* Product Performance Dashboard
+* Conversion Funnel
+* Category Analysis
+* Revenue Trends
+* Top Products
+* Business KPIs
+
+---
+
+# 💡 Key Business Insights
+
+* Identified high-performing products with strong conversion rates.
+* Analyzed customer purchase journeys to identify cart abandonment patterns.
+* Evaluated repeat purchase behavior to understand customer loyalty.
+* Compared product category performance to identify growth opportunities.
+* Built KPI dashboards to support data-driven business decisions.
+
+---
+
+# 🚀 Business Recommendations
+
+* Promote high-converting products through targeted marketing campaigns.
+* Improve the checkout experience to reduce cart abandonment.
+* Introduce personalized recommendations based on customer browsing behavior.
+* Focus inventory planning on top-performing product categories.
+* Develop customer retention strategies for repeat buyers.
+
+---
+
+# 📂 Repository Structure
+
+```text
+Ecommerce-User-Product-Analytics/
+│
+├── data/
+├── sql/
+├── python/
+├── tableau/
+├── images/
+├── README.md
+└── requirements.txt
+```
+
+---
+
+# 📷 Dashboard Preview
+
+Add screenshots of your Tableau dashboard here.
+
+Example:
+
+* Customer Behaviour Dashboard
+* Product Performance Dashboard
+* Sales Overview Dashboard
+
+---
+
+# 📌 Skills Demonstrated
+
+* SQL Query Writing
+* Common Table Expressions (CTEs)
+* Window Functions
+* Data Cleaning
+* Exploratory Data Analysis (EDA)
+* Customer Analytics
+* Product Analytics
+* KPI Development
+* Tableau Dashboard Design
+* Business Intelligence
+* Data Visualization
+
+---
+
+# 👨‍💻 Author
+
+**Ajay Mundari**
+
+* SQL | Python | Tableau | Power BI | Excel
+* Passionate about solving business problems through data analytics.
