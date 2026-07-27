@@ -317,6 +317,6 @@ ecommerce-product-analytics/
 
 **Ajay Mundari**
 
-Associate Analyst | SQL | Python | Tableau | Product Analytics | Data Analytics
+SQL | Python | Tableau | Product Analytics | Data Analytics
 
 If you found this project useful, please consider giving it a ⭐ on GitHub.
