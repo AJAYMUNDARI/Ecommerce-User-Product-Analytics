@@ -1,176 +1,322 @@
-# 🛒 E-commerce User & Product Behaviour Analytics
+# 🛒 E-Commerce Product Analytics
 
-## 📌 Project Overview
+## 📌 Executive Summary
 
-This project analyzes user behavior and product performance for an e-commerce platform using **SQL, Python, and Tableau**. The objective is to transform raw customer interaction data into meaningful business insights that can help improve customer engagement, optimize product performance, and increase conversion rates.
+Understanding customer behavior throughout the online shopping journey is essential for improving conversion rates, increasing revenue, and delivering better customer experiences. This project demonstrates an end-to-end Product Analytics workflow using **MySQL, SQL, Python, and Tableau**.
 
-The project follows a complete analytics workflow, including data cleaning, exploratory data analysis (EDA), SQL-based business analysis, and interactive dashboard development.
+Starting from raw e-commerce event data, the project builds a complete analytics pipeline by importing data into MySQL, performing SQL-based business analysis, connecting the database to Python for exploratory analysis and feature engineering, and finally creating interactive Tableau dashboards for business reporting.
+
+The project simulates how Product Analysts and Data Analysts transform raw customer interaction data into actionable business insights.
 
 ---
 
 # 🎯 Business Problem
 
-E-commerce businesses generate millions of customer interactions every day, making it challenging to understand purchasing behavior and identify opportunities for growth.
+E-commerce platforms collect millions of customer interaction events such as product views, add-to-cart actions, and completed purchases. While this data is valuable, businesses often struggle to understand customer behavior, identify conversion bottlenecks, and optimize product performance.
 
-This project aims to answer key business questions such as:
-
-* Which products have the highest conversion rates?
-* Where do customers drop off in the purchase journey?
-* Which product categories drive the most sales?
-* How many customers return for repeat purchases?
-* Which products should be promoted based on user engagement?
-* What trends can help improve customer retention and revenue?
+This project aims to analyze customer interactions across the purchase funnel to uncover behavioral patterns, improve product performance, and support data-driven business decisions.
 
 ---
 
-# 📊 Dataset
+# 🎯 Business Objectives
 
-The project uses the **RetailRocket E-commerce Dataset**, which contains anonymous customer interactions with an online retail platform.
+The project aims to:
 
-### Dataset Files
+* Analyze customer behavior across the purchase funnel.
+* Measure product conversion rates.
+* Identify high-performing product categories.
+* Evaluate customer engagement patterns.
+* Analyze revenue and transaction trends.
+* Build interactive dashboards for business reporting.
+* Support product optimization using data-driven insights.
 
-* **events.csv** – Customer events such as views, add-to-cart actions, and transactions.
-* **item_properties.csv** – Product attributes and metadata.
-* **category_tree.csv** – Product category hierarchy.
+---
+
+# 📂 Dataset Overview
+
+The project uses a real-world e-commerce behavioral dataset consisting of customer interaction events.
+
+### Files Used
+
+* `events.csv`
+* `category_tree.csv`
+* `item_properties_part1.csv`
+* `item_properties_part2.csv`
+
+### Dataset Includes
+
+* Customer Events
+* Product Information
+* Product Categories
+* Product Properties
+* Transaction History
+* Event Timestamps
+
+---
+
+# 🏗 Project Architecture
+
+```text
+Raw CSV Files
+(events.csv,
+category_tree.csv,
+item_properties_part1.csv,
+item_properties_part2.csv)
+
+            │
+            ▼
+
+      MySQL Database
+
+            │
+            ▼
+
+      SQL Analysis
+
+    • Database Design
+    • Data Cleaning
+    • Business Queries
+    • Analytical Views
+
+            │
+            ▼
+
+      Python Analysis
+
+    • Pandas
+    • Data Cleaning
+    • Feature Engineering
+    • Exploratory Data Analysis
+
+            │
+            ▼
+
+     Processed Dataset
+
+            │
+            ▼
+
+     Tableau Dashboards
+
+            │
+            ▼
+
+Business Insights & Recommendations
+```
+
+---
+
+# ❓ Business Questions
+
+The project answers the following business questions:
+
+* How many customers progress through each stage of the purchase funnel?
+* Which product categories generate the highest transactions?
+* Which products have the highest customer engagement?
+* Which products experience the highest cart abandonment?
+* Which customers generate the highest revenue?
+* How does customer activity change over time?
+* Which products perform best across categories?
+* What business insights can improve customer conversion?
 
 ---
 
 # 🛠️ Tech Stack
 
+### Database
+
+* MySQL
+
+### Query Language
+
 * SQL
+
+### Programming
+
 * Python
+
+### Libraries
+
 * Pandas
 * NumPy
+* SQLAlchemy
+* Matplotlib
+
+### Visualization
+
 * Tableau
-* Microsoft Excel
+
+### Development Environment
+
+* Jupyter Notebook
+
+### Version Control
+
+* Git
+* GitHub
 
 ---
 
-# 📈 Project Workflow
+# 🔄 Project Workflow
 
-1. Data Collection
-2. Data Cleaning & Preprocessing
-3. Exploratory Data Analysis (EDA)
-4. SQL-Based Business Analysis
-5. Customer Behaviour Analysis
-6. Product Performance Analysis
-7. KPI Development
-8. Tableau Dashboard Creation
-9. Business Insights & Recommendations
+### Phase 1 — Data Collection
 
----
+* Import CSV files into MySQL.
+* Create relational database tables.
 
-# 🔍 SQL Analysis
-
-The following business analyses were performed:
-
-* Customer Conversion Rate
-* Cart Abandonment Analysis
-* Product Performance Analysis
-* Category-wise Sales
-* Repeat Customer Analysis
-* Daily & Monthly Transaction Trends
-* Customer Purchase Frequency
-* Top Selling Products
-* Revenue Analysis
-
----
-
-# 🐍 Python Analysis
-
-Python was used for:
+### Phase 2 — SQL Analytics
 
 * Data Cleaning
-* Missing Value Handling
+* Joins
+* Views
+* Business Queries
+
+### Phase 3 — Python Analytics
+
+* Database Connection
 * Exploratory Data Analysis
-* Customer Behaviour Analysis
-* Product Trend Analysis
-* Data Visualization
+* Feature Engineering
+* Customer Analysis
+
+### Phase 4 — Business Intelligence
+
+* Tableau Dashboard Development
+* KPI Reporting
+* Business Storytelling
 
 ---
 
-# 📊 Tableau Dashboard
+# 📊 Analysis Performed
 
-An interactive Tableau dashboard was developed to monitor business performance through key metrics and visualizations, including:
+The project includes:
 
-* Sales Overview
-* Customer Behaviour Dashboard
-* Product Performance Dashboard
-* Conversion Funnel
-* Category Analysis
+* Customer Behavior Analysis
+* Product Performance Analysis
+* Purchase Funnel Analysis
+* Category Performance Analysis
+* Revenue Analysis
+* Transaction Analysis
+* Customer Engagement Analysis
+* Product Analytics
+
+---
+
+# 📈 Dashboard Overview
+
+The Tableau dashboard includes:
+
+* Executive Summary
+* Customer Funnel Analysis
+* Product Performance
+* Category Performance
 * Revenue Trends
-* Top Products
-* Business KPIs
+* Customer Activity
+* Product Conversion Analysis
 
 ---
 
-# 💡 Key Business Insights
+# 📈 Key Insights
 
-* Identified high-performing products with strong conversion rates.
-* Analyzed customer purchase journeys to identify cart abandonment patterns.
-* Evaluated repeat purchase behavior to understand customer loyalty.
-* Compared product category performance to identify growth opportunities.
-* Built KPI dashboards to support data-driven business decisions.
-
----
-
-# 🚀 Business Recommendations
-
-* Promote high-converting products through targeted marketing campaigns.
-* Improve the checkout experience to reduce cart abandonment.
-* Introduce personalized recommendations based on customer browsing behavior.
-* Focus inventory planning on top-performing product categories.
-* Develop customer retention strategies for repeat buyers.
+* Product views significantly exceed completed purchases, indicating opportunities to improve conversion rates.
+* Customer engagement varies across product categories.
+* Certain categories consistently generate higher transaction volumes.
+* Customer behavior analysis identifies important drop-off points in the purchase funnel.
+* SQL and Tableau together provide comprehensive business reporting for product teams.
 
 ---
 
-# 📂 Repository Structure
+# 💡 Business Recommendations
+
+Based on the analysis:
+
+* Improve checkout flow to reduce cart abandonment.
+* Optimize product recommendations for returning users.
+* Increase visibility of high-converting products.
+* Personalize promotions using customer behavior.
+* Continuously monitor product performance using interactive dashboards.
+
+---
+
+# 📁 Project Structure
 
 ```text
-Ecommerce-User-Product-Analytics/
+ecommerce-product-analytics/
 │
 ├── data/
+│   ├── raw/
+│
+├── notebooks/
+│
 ├── sql/
-├── python/
+│   ├── create_tables.sql
+│   ├── import_data.sql
+│   ├── views.sql
+│   └── business_queries.sql
+│
 ├── tableau/
+│   └── Ecommerce_Product_Analytics.twbx
+│
 ├── images/
+│
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+
 ```
 
 ---
 
-# 📷 Dashboard Preview
+# 💼 Skills Demonstrated
 
-Add screenshots of your Tableau dashboard here.
+### Programming
 
-Example:
+* Python
 
-* Customer Behaviour Dashboard
-* Product Performance Dashboard
-* Sales Overview Dashboard
+### Database
 
----
+* MySQL
 
-# 📌 Skills Demonstrated
+### Query Language
 
-* SQL Query Writing
-* Common Table Expressions (CTEs)
-* Window Functions
+* SQL
+
+### Data Analysis
+
+* Pandas
+* NumPy
 * Data Cleaning
-* Exploratory Data Analysis (EDA)
-* Customer Analytics
-* Product Analytics
-* KPI Development
-* Tableau Dashboard Design
-* Business Intelligence
-* Data Visualization
+* Feature Engineering
+* Exploratory Data Analysis
+
+### Product Analytics
+
+* Customer Behavior Analysis
+* Purchase Funnel Analysis
+* Product Performance Analysis
+* Business Analytics
+
+### Visualization
+
+* Tableau
+* Dashboard Design
+* Data Storytelling
 
 ---
 
-# 👨‍💻 Author
+# 🔮 Future Enhancements
+
+* Customer Segmentation
+* Cohort Analysis
+* A/B Testing
+* Customer Lifetime Value (CLV)
+* Churn Prediction
+* Recommendation System Analytics
+
+---
+
+# 👤 Author
 
 **Ajay Mundari**
 
-* SQL | Python | Tableau | Power BI | Excel
-* Passionate about solving business problems through data analytics.
+Associate Analyst | SQL | Python | Tableau | Product Analytics | Data Analytics
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
