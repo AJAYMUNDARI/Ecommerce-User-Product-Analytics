@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+
+![SQL](https://img.shields.io/badge/SQL-MySQL-orange)
+
+![Tableau](https://img.shields.io/badge/Tableau-Dashboard-blue)
+
 # 🛒 E-Commerce Product Analytics
 
 ## 📌 Executive Summary
